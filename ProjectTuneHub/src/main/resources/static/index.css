@@ -1,0 +1,54 @@
+html {
+	background-image: url('/images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+body {
+	font-family: "Cinzel", serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.content {
+	margin-top: 150px;
+	border-radius: 8px;
+	width: 400px;
+	height: 350px;
+	display: grid;
+	place-items: center;
+	padding: 0;
+	background-color: rgba(1, 1, 1, 0.8);
+}
+
+a {
+	font-family: "Cinzel", serif;
+	text-decoration: none;
+	color: black;
+	background-color: #ffffff;
+	width: 150px;
+	padding: 10px;
+	border-radius: 50px;
+	display: inline-block;
+	text-align: center;
+	font-weight:bold;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+#tunehub {
+	margin: 0 20px;
+}
+
+#quote {
+	margin: 0 20px;
+}

@@ -1,0 +1,45 @@
+/*  Define your CSS styles here*/
+body {
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+h2{
+	color:white;
+}
+#table {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 100px;
+  text-align: center;
+  border-spacing: 0;
+  border:transparent;
+  
+}
+table {
+  background-color: rgba(102, 102, 161, 0.993);
+ 
+  width: 100%;
+  border-radius: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: center;
+  border-spacing: 0;
+  border:transparent;
+}
+
+th,
+td {
+ border-spacing: 0;
+  padding: 10px;
+  text-align: center;
+ 
+}
+
+th {
+  background-color: rgb(174, 190, 241);
+  
+}
+ 
+
+ 

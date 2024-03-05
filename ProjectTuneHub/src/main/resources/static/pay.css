@@ -1,0 +1,46 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  background-color: black;
+  border:50px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  text-align: center;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: rgba(102, 102, 161, 0.993);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: gold;
+}

@@ -1,0 +1,75 @@
+html {
+	background-image: url('/images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+body {
+	font-family: "Cinzel", serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	height:80vh;
+	
+}
+
+
+
+form {
+	width: 300px;
+	margin: 50px auto;
+	background-color: rgba(1, 1, 1, 0.8);
+	padding: 10px;
+	border-radius: 10px;
+	font-family: "Cinzel", serif;
+	align-items: center;
+}
+
+h2 {
+	 
+	 font-family: "Cinzel", serif;
+	font-optical-sizing: auto;
+	font-weight: 300; 
+	color: white;
+	text-align:center;
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type="email"], input[type="password"] {
+	
+	
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 5px 0 20px 0;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-sizing: border-box;
+	/* Ensures padding and border are included in the element's total width and height */
+}
+
+input[type="submit"] {
+	font-family: "Cinzel", serif;
+	text-decoration: none;
+	color: black;
+	background-color: #ffffff;
+	width: 150px;
+	padding: 10px;
+	margin-left: 20%;
+	margin-bottom: 10px; border-radius : 50px;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	border-radius: 50px;
+}
+
+input[type="submit"]:hover {
+	background-color: #000;
+	color: #fff;
+}

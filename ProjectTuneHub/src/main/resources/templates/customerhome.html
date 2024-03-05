@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>CUSTOMER HOME PAGE</title>
+<link rel=stylesheet type=text/css th:href="@{/customerhome.css}">
+</head>
+<body>
+	<h2>Customer Home</h2>
+
+	<div id="customer">
+
+		<div th:unless="${ispremium}" class="non-premium">
+			<form action="pay">
+
+				<input type="submit" value="GET PREMIUM">
+			</form>
+
+			<br> <br>
+
+			<form action="logout">
+				<input type="submit" value="LOGOUT">
+			</form>
+		</div>
+
+		<div th:if="${ispremium} " class="premium">
+			<table border="1">
+				<h2>Enjoy your favorite songs with our tunehub</h2>
+				<thead>
+
+					<tr>
+						<th>Song Name</th>
+						<th>Song Artist</th>
+						<th>Song Generic</th>
+						<th>Play</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr th:each="s:${songs}">
+
+						<td th:text="${s.name}"></td>
+						<td th:text="${s.artist}"></td>
+						<td th:text="${s.genre}"></td>
+
+						<td><audio controls>
+								<source th:src="${s.link}">
+							</audio></td>
+
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+
+
+	</div>
+
+</body>
+</html>

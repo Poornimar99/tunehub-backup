@@ -1,0 +1,53 @@
+/* Style for the Add Song form */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(102, 102, 161, 0.993);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: rgb(174, 190, 241);
+  color: black;
+  
+  border: transparent;
+  border-radius: 10px;
+  
+  box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
