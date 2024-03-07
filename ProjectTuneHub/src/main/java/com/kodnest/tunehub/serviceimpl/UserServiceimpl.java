@@ -13,7 +13,6 @@ public class UserServiceimpl implements UserService{
 	UserRepository userrepository;
 
 	public String addUser(User user) {
-
 		userrepository.save(user);
 		return "successfuly added";
 	}
@@ -57,8 +56,9 @@ public class UserServiceimpl implements UserService{
 	public User getUser(String email) {
 		return	userrepository.findByEmail(email);
 	}
-	public void updateUser(User user) {
+	public String updateUser(User user) {
 		userrepository.save(user);
+		return "User Updated";
 	}
 
 

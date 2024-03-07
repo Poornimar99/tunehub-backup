@@ -5,37 +5,20 @@
 <title>PLAYLIST LIST</title>
 <link rel=stylesheet type=text/css th:href="@{/displayplaylist.css}">
 </head>
+
 <body>
-	<table border="1" >
-		<thead>
-			<tr>
-				<th>Playlist Name</th>
-				<th>Playlist Songs</th>
-
-
-			</tr>
-		</thead>
-
-		<tbody>
-			<tr th:each="s:${playlistsong}">
-				<td th:text="${s.name}"></td>
-
-				<td>
-					<ul>
-						<li th:each="song:${s.songs}"><span th:text="${song.name}"></span>
-							<audio controls>
-								<source th:src="${song.link}">
-							</audio></li>
-					</ul>
-
-
-				</td>
-
-
-
-			</tr>
-		</tbody>
-
-	</table>
+<div class="grid-container">
+    <div th:each="s : ${playlistsong}" class="playlist-item">
+        <h3 th:text="${s.name}"></h3>
+        <ul>
+            <li th:each="song:${s.songs}">
+                <span th:text="${song.name}"></span>
+                <audio controls>
+                    <source th:src="${song.link}">
+                </audio>
+            </li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>

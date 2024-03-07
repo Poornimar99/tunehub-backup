@@ -1,45 +1,40 @@
-/*  Define your CSS styles here*/
-body {
-  background-color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
+html {
+	background-image: url('/images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
 }
-h2{
-	color:white;
-}
-#table {
+
+
+
+#grid {
+  max-width: 800px; /* Adjust the maximum width as needed */
   margin: 0 auto;
-  width: 80%;
-  margin-top: 100px;
-  text-align: center;
-  border-spacing: 0;
-  border:transparent;
-  
+  padding: 20px;
+  color:white;
 }
-table {
-  background-color: rgba(102, 102, 161, 0.993);
- 
-  width: 100%;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width as needed */
+  grid-gap: 20px; /* Adjust gap between grid items */
+}
+
+.grid-item {
+  background-color: rgba(1, 1, 1, 0.8);
+  padding: 20px;
   border-radius: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
   text-align: center;
-  border-spacing: 0;
-  border:transparent;
-}
-
-th,
-td {
- border-spacing: 0;
-  padding: 10px;
-  text-align: center;
- 
-}
-
-th {
-  background-color: rgb(174, 190, 241);
   
 }
- 
 
- 
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 20px;
+}
+
+audio {
+  width: 100%;
+}

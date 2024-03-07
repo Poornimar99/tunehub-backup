@@ -1,65 +1,74 @@
 /* Style for the registration form */
+html {
+	background-image: url('/images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: black;
-  margin: 0;
-  padding: 0;
-  color: black;
+	font-family: "Cinzel", serif;
+	align-items: center;
+	justify-content: center;
+	color: white;
 }
 
 h2 {
-  text-align: center;
-  color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
+	text-align: center;
+	color: white;
+	font-family: "Cinzel", serif;
 }
 
 form {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: rgba(102, 102, 161, 0.993);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
+	max-width: 400px;
+	margin: 0 auto;
+	background-color: rgba(1, 1, 1, 0.8);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	font-family: "Cinzel", serif;
 }
 
 label {
-  font-weight: bold;
+	color: white;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
+input[type="text"], input[type="email"], input[type="password"],
+	textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-sizing: border-box;
 }
 
 input[type="radio"] {
-  margin-right: 5px;
-  border: 1px solid #ccc;
+	margin-right: 5px;
+	border: 1px solid #ccc;
 }
 
 input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: rgb(174, 190, 241);
-  color: black;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
+	margin-top: 30px;
+	width: 100%;
+	padding: 10px;
+	font-family: "Cinzel", serif;
+	color: black;
+	background-color: #ffffff;
+	border-radius: 50px; 
+	display : inline-block; 
+	text-align : center;
+	transition : all 0.3s ease; 
+	border-radius : 50px;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	transition: all 0.3s ease;
+	border-radius: 50px;
 }
 
 input[type="submit"]:hover {
-  background-image: url("hydrangea-8540804_640.jpg"); /* Remove background image on hover */
-  background-color: #0056b3;
-
-  border-color: #007bff;
+	background-color: #000;
+	color: white;
 }

@@ -53,44 +53,43 @@ public class PaymentController {
 		finally {
 			return order.toString();
 		}
-		
+
 	}
 	@PostMapping("/verify")
 	@ResponseBody
 	public boolean verifyPayment(@RequestParam  String orderId, @RequestParam String paymentId,
-											@RequestParam String signature) {
-	    try {
-	        // Initialize Razorpay client with your API key and secret
-	        RazorpayClient razorpayClient = new RazorpayClient("rzp_test_DMN2f5VWEGg4ym", 
-	        								"kY7v90nDmvFWNYgYBWjtwDCO");
-	        // Create a signature verification data string
-	        String verificationData = orderId + "|" + paymentId;
+			@RequestParam String signature) {
+		try {
+			// Initialize Razorpay client with your API key and secret
+			RazorpayClient razorpayClient = new RazorpayClient("rzp_test_DMN2f5VWEGg4ym", 
+					"kY7v90nDmvFWNYgYBWjtwDCO");
+			// Create a signature verification data string
+			String verificationData = orderId + "|" + paymentId;
 
-	        // Use Razorpay's utility function to verify the signature
-	        boolean isValidSignature = Utils.verifySignature(verificationData, signature, 
-	        													"kY7v90nDmvFWNYgYBWjtwDCO");
+			// Use Razorpay's utility function to verify the signature
+			boolean isValidSignature = Utils.verifySignature(verificationData, signature, 
+					"kY7v90nDmvFWNYgYBWjtwDCO");
 
-	        return isValidSignature;
-	    } catch (RazorpayException e) {
-	        e.printStackTrace();
-	        return false;
-	    }
+			return isValidSignature;
+		} catch (RazorpayException e) {
+			e.printStackTrace();
+			return false;
+		}
 	}
 	@GetMapping("payment-success")
 	public String paymentSuccess(HttpSession session) {
-			String mail =  (String) session.getAttribute("email");
-
-			User user = userService.getUser(mail);
-			user.setIspremium(true);
-			
-			userService.updateUser(user);
+		String mail =  (String) session.getAttribute("email");
+		User user = userService.getUser(mail);
+		user.setIspremium(true);
+		String updateUser = userService.updateUser(user);
+		System.out.println(updateUser);
 		return "customerhome";
 	}
 	@GetMapping("payment-failure")
 	public String paymentFailure() {
 		return "customerhome";
 	}
-	
-	
-	
+
+
+
 }

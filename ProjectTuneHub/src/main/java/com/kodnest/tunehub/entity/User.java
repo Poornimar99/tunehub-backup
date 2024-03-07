@@ -80,6 +80,7 @@ public class User {
 	public void setIspremium(boolean ispremium) {
 		this.ispremium = ispremium;
 	}
+	
 	@Override
 	public String toString() {
 		return "User [userid=" + userid + ", username=" + username + ", email=" + email + ", password=" + password

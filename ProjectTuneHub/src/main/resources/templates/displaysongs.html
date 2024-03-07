@@ -6,37 +6,23 @@
 <link rel=stylesheet type=text/css th:href="@{/displaysongs.css}">
 </head>
 <body>
-<div id=table>
-<table border="1" >
-<h2>Enjoy your favorite songs with our tunehub</h2>
- <thead>
- 
-   <tr>
-     <th>Song Name</th>
-     <th>Song Artist</th>
-     <th>Song Generic</th>
-     <th>Play</th>
-   </tr>
-  </thead>
-
-<tbody>
-				<tr th:each="s:${songs}">
-				
-				<td th:text="${s.name}"></td>
-				<td th:text="${s.artist}"></td>
-				<td th:text="${s.genre}"></td>
-				
-				<td>
+<div id="grid">
+  <h2>Enjoy your favorite songs with our tunehub</h2>
+  <div class="grid-container">
+    
+    <div class="grid-item" th:each="s:${songs}">
+      <p><strong>Song Name:</strong> <span th:text="${s.name}"></span></p>
+      <p><strong>Song Artist:</strong> <span th:text="${s.artist}"></span></p>
+      <p><strong>Song Genre:</strong> <span th:text="${s.genre}"></span></p>
+      
 					<audio controls>
-						<source th:src="${s.link}">
+						<source th:src="${s.link}" />
 					</audio>
-				 </td>
 				 
-				</tr>
-			</tbody>
-
-</table>
+    </div>
+  </div>
 </div>
+
 </body>
 </html>
 

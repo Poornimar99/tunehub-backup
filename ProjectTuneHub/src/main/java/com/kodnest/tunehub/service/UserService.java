@@ -9,7 +9,7 @@ public interface UserService {
 	public boolean ValidateUser(String email, String password);
 	public String getRole(String email);
 	
-	public void updateUser(User user);
+	public String updateUser(User user);
 	public User getUser(String email);
 	
 	

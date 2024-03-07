@@ -25,7 +25,7 @@ public class SongController {
 	public String addsong(@ModelAttribute Song song){
 
 		boolean songstatus=songserviceimpl.songExists(song.getName());//get name from form
-		if(songstatus == true) {
+		if(songstatus == false) {
 			songserviceimpl.addSong(song);
 			System.out.println("Song added successfully");
 		}

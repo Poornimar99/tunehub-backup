@@ -1,71 +1,75 @@
-body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  background-color: black;
- 
+html {
+	background-image: url('/images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
 }
-h2{
-	color:white;
-	 text-align: center;
+
+body {
+	font-family: "Cinzel", serif;
+	font-size: 20px; /* Adjust font size as needed */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+h2 {
+	font-family: "Cinzel", serif;
+	color: white;
+	text-align: center;
 }
 
 form {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-
-  border-radius: 10px;
- 
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 20px;
+	border-radius: 10px;
 }
 
-
 label {
-  font-weight: bold;
-  color: white;
+	font-family: "Cinzel", serif;
+	color: white;
 }
 
 input[type="text"] {
-  padding: 10px;
-  margin-bottom: 20px;
-  border: transparent;
-  border-radius: 10px;
-
+	padding: 10px;
+	margin-bottom: 20px;
+	border: transparent;
+	border-radius: 10px;
 }
-
 
 table {
-  width: 100%;
-  margin-bottom: 20px;
-  background-color: rgba(102, 102, 161, 0.993);
-  border-spacing: 0;
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: rgba(1, 1, 1, 0.8);
+	border-spacing: 0;
 }
 
-table th,
-table td {
-  padding: 10px;
-  border: transparent;
+table th, table td {
+	padding: 10px;
+	border: transparent;
 }
 
 table th {
-  background-color: rgb(174, 190, 241);
-  font-weight: bold;
-  border: transparent;
+	background-color: rgba(1, 1, 1, 0.8);
+	font-weight: bold;
+	border: transparent;
 }
 
-
-
 #add-playlist-button {
-  text-align: center;
+	text-align: center;
 }
 
 #button {
-  padding: 10px 20px;
-  background-color: rgb(174, 190, 241);
-  color:black;
-  
-  border-radius: 10px;
+	padding: 10px 20px;
+	font-family: "Cinzel", serif;
+	color: black;
+	background-color: #ffffff;
+	border-radius: 10px;
 }
 
 #button:hover {
-  background-color: #0056b3;
+	background-color: #000;
+	color: #fff;
 }
